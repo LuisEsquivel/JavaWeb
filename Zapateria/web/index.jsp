@@ -28,7 +28,7 @@
             
             <div class="dropdown">
                 
-                 <p class="fecha" id="fechaHora"> perro </p>   
+                 <p class="fecha" id="fechaHora"> perrillo </p>   
                 <button class="dropbtn">Usuario<i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
