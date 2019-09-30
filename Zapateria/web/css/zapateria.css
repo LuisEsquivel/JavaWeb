@@ -98,7 +98,7 @@
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
-  height: 1000px;
+  /* height: 1000px; */
   padding-top: 60px;
 }
 
@@ -120,3 +120,16 @@ div.content {
     float: none;
   }
 }
+
+
+.topnav .fecha {
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 14px 32px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+

@@ -5,6 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/zapateria.css">
+        
+        <script type="text/javascript" src="js/javascript.js"></script>
+                     <script src="js/javascript.js"></script> 
+       
+      
+        
     </head>
     <body>
         <div class="sidebar">
@@ -16,7 +22,13 @@
         </div>
 
         <div class="topnav">
+            
+            
+    
+            
             <div class="dropdown">
+                
+                 <p class="fecha" id="fechaHora"> perro </p>   
                 <button class="dropbtn">Usuario<i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
@@ -25,6 +37,8 @@
                 </div>
             </div>
         </div>
+        
+        
         <!-- Page content -->
         <div class="content">
             <form action="Ejemplo" method="post">
@@ -56,6 +70,8 @@
                 </table>
 		<input type="submit" value="Registrar" />
             </form>
-        </div>
+            
+    
+          
     </body>
 </html>

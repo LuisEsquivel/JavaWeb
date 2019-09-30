@@ -1,0 +1,121 @@
+.topnav {
+  background-color: black; /* EL COLOR DE FONDO */
+  height: 50px;           /* ALTURA 50 PIXELES */
+  position: fixed; 
+  width: 100%;            /* TODO EL ANCHO DE LA PANTALLA */
+  text-align: right;      /* TEXTO ALINEADO A LA DERECHA */
+}
+
+
+.topnav a {
+  float: left;            
+  font-size: 16px;       /* TAMAÑO DE LA FUENTE */
+  color: white;          /* COLOR BLANCO */
+  text-align: center;    /* TEXTO ALINEADO A LA DERECHA */
+  padding: 14px 16px;    /* 14 PIXELES ALINEADO HACIA ARRIBA Y HACIA ABAJO Y 16 PIXELES HACIA LA IZQUIERDA Y DERECHA */
+  text-decoration: none; /* SIN DECORACIÓN DE TEXTO */
+}
+
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+
+.topnav .dropbtn {
+  font-size: 16px;           /* TAMAÑO DE LA LETRA DEL BOTÓN */
+  border: none;              /* SIN BORDE */
+  outline: none;             /* SIN LINEA */
+  color: white;              /* COLOR BLANCO */
+  padding: 14px 16px;        /* 14 PIXELES ALINEADO HACIA ARRIBA Y HACIA ABAJO Y 16 PIXELES HACIA LA IZQUIERDA Y DERECHA */
+  background-color: inherit; /* SIN BACKGROUND */
+  font-family: inherit;      /* SIN TIPO DE FUENTE */
+  margin: 0;                 /* SIN MARGEN */
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;                    /* COLOR DE FONDO */
+  min-width: 160px;                             /* EL ANCHO MINIMO ES DE 160PX */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* AGREGA UN EFECTO DE SOMBRA */
+  z-index: 1;
+}
+
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;   /* 12 PIXELES ALINEADO HACIA ARRIBA Y HACIA ABAJO Y 16 PIXELES HACIA LA IZQUIERDA Y DERECHA */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sidebar {
+  margin: 0;                    /* SIN MARGIN */
+  padding: 0;                   /* SIN PADDING */
+  padding-top: 50px;          
+  width: 200px;                 /* ANCHO DE 200 PIXELES */
+  background-color: #f1f1f1;    /* COLOR DEL FONDO*/
+  position: fixed;
+  height: 100%;                 /* ALTURA DEL 100% */
+  overflow: auto;
+}
+
+/*  */
+.sidebar a {
+  display: block;
+  color: black;            /* COLOR NEGRO*/
+  padding: 16px;           /* 16 PIXELES ALINEADOS A TODOS LOS LADOS */
+  text-decoration: none;   /* SIN DECORACION DE TEXTO */
+}
+
+
+.sidebar a.active {
+  background-color: #4CAF50; /* COLOR DE FONDO */
+  color: white;              /* COLOR BLANCO */
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;  /* COLOR DE FONDO DE LA ETIQUETA a(href) */
+  color: white;            /* COLOR DE LA ETIQUETA a DE BLANCO */
+}
+
+
+div.content {
+  margin-left: 200px;   /* ELEMENTO ALINEADO 200 PIXELES A LA IZQUIERDA */
+  padding: 1px 16px;    /* 1 PIXELES ALINEADO HACIA ARRIBA Y HACIA ABAJO Y 16 PIXELES HACIA LA IZQUIERDA Y DERECHA */
+  height: 1000px;       /* CON UNA ALTO DE 1000 PIXELES */
+  padding-top: 60px;    
+}
+
+/*RESOLUCIÓN DEL MENÚ LATERAL A UN MAXIMO DE 700 PIXELES*/
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;          /* ANCHO AL 100%*/
+    height: auto;         /* ALTO AUTOMATICO*/
+    position: relative;  
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/*SIRVE PARA LA RESOLUCIÓN DE LA PANTALLA*/
+@media screen and (max-width: 400px) {
+  .sidebar a {
+      
+    text-align: center;  /* TEXTO ALINEADO A LA DERECHA */
+    float: none;
+  }
+}   
