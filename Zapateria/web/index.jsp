@@ -14,11 +14,37 @@
     </head>
     <body>
         <div class="sidebar">
-            <a class="active" href="#ventas">Ventas</a>
+            
+            <%@ page import="java.util.*" %>
+            
+            <%
+
+                               ArrayList lista = new ArrayList();                        
+                               lista = (ArrayList)sesion.getAttribute("menu");
+
+                                   int i = 0;
+                                   for (int a=0;a<lista.size();a++){
+
+                                        Object itemMenu = lista.get(i);
+                                        
+                                        System.out.println("<a class='active' href='#ventas' " + itemMenu.toString() + "> </a>");
+                                        
+                                        i++;
+                                    
+              %>
+              
+              <a href="#caja">Caja</a>
+              
+              <%
+                                   }          
+              %>
+ 
+            <!--
             <a href="#caja">Caja</a>
             <a href="#almacen">Almac&eacute;n</a>
             <a href="#supervisor">Supervisor</a>
             <a href="#atnctes">At'n a Clientes</a>
+            -->
         </div>
 
         <div class="topnav">
